@@ -21,6 +21,7 @@ quaver = 266
 semi_quaver = 133
 
 
+
 #  -----verse 1-----
 
 def verse1():
@@ -152,7 +153,7 @@ def chorus():
     music.play_tone(d, quaver)
 
 
-    #never gonna run a-round 
+    #never gonna run a-round
     music.play_tone(c, semi_quaver)
     music.play_tone(d, semi_quaver)
     music.play_tone(f, semi_quaver)
@@ -194,7 +195,7 @@ def chorus():
     music.play_tone(d, semi_quaver)
     music.play_tone(c, crotchet)
 
-    #never gonna tell a lie 
+    #never gonna tell a lie
     music.play_tone(c, semi_quaver)
     music.play_tone(d, semi_quaver)
     music.play_tone(f, semi_quaver)
@@ -216,11 +217,19 @@ def chorus():
 
 
 
-#play 
+#play
 
 #verse1,chorsu,verse2,chorus,chorus,bridge,verse3,chorus,chorus,chorus,chorus
 
-def on_button_pressed_a():
+
+
+def play():
     verse1()
     chorus()
+
+def on_button_pressed_a():
+    control.in_background(play)
 input.on_button_pressed(Button.A, on_button_pressed_a)
+
+while True:
+    basic.show_string("NEVER GONNA GIVE YOU UP")
