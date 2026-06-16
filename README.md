@@ -1,2 +1,242 @@
 # never-gonna-give-u-up-microbit
 (not finished)
+
+1) got to THIS website:  
+https://makecode.microbit.org/#editor
+
+2)make a new project and paste the code below
+
+3)click button A on the microbit simulator 
+
+enjoy and show ur friends >:))
+^
+|
+|
+|
+|
+CODE BELOW(PASTE THIS INTO UR PROJECT):
+#music.play_tone(, )
+
+c = 262
+c# = 277
+d = 294
+eb = 311
+e = 330
+f = 350
+f# = 392
+g = 392
+ab = 415
+a = 440
+bb = 466
+b = 494
+c2 = 523
+
+minum = 1064
+crotchet = 532
+quaver = 266
+semi_quaver = 133
+
+
+#  -----verse 1-----
+
+def verse1():
+
+    #weve known each other
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(g, crotchet+200)
+    basic.pause(10)
+
+    #for too long
+    music.play_tone(e, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(c, minum)
+    basic.pause(10+crotchet+quaver)
+
+    #u know the rules and
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(d, crotchet)
+
+    #so do i
+    music.play_tone(c, quaver)
+    music.play_tone(c2, quaver)
+    basic.pause(10+quaver)
+    music.play_tone(c2, quaver)
+    music.play_tone(g, crotchet)
+    music.play_tone(a, quaver)
+    music.play_tone(g, crotchet)
+    basic.pause(10+quaver)
+
+    #a full commitment's what im
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(g, crotchet)
+    basic.pause(crotchet)
+
+    #going on
+    music.play_tone(e, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(c, crotchet+quaver)
+    basic.pause(crotchet)
+
+    #u wouldn't get this from
+    music.play_tone(d, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(d, quaver)
+    music.play_tone(c, crotchet)
+    basic.pause(20)
+
+    #any other guy
+    music.play_tone(g, quaver)
+    music.play_tone(g, quaver)
+    music.play_tone(g, quaver)
+    music.play_tone(a, quaver)
+    music.play_tone(g, crotchet)
+    basic.pause(crotchet)
+
+
+    #i-------js wana tel u how im feeeelin'
+    music.play_tone(f, quaver+minum)
+    music.play_tone(g, quaver)
+    music.play_tone(a, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(g, quaver)
+    music.play_tone(g, quaver)
+    music.play_tone(g, quaver)
+    music.play_tone(a, quaver)
+    music.play_tone(g, crotchet)
+    music.play_tone(c, crotchet)
+    basic.pause(minum)
+
+    #gotta make u
+    music.play_tone(d, quaver)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver)
+    music.play_tone(d, quaver)
+    basic.pause(quaver)
+
+    #understand
+    music.play_tone(g, quaver)
+    basic.pause(30)
+    music.play_tone(a, quaver)
+    basic.pause(30)
+    music.play_tone(a, quaver)
+    music.play_tone(g, quaver+crotchet)
+
+
+
+
+
+
+# ------chorus-----
+
+def chorus():
+    #never gonna give u up
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(a, semi_quaver+quaver)
+    music.play_tone(a, semi_quaver+quaver)
+    music.play_tone(g, quaver+crotchet)
+
+
+    #never gonna let u down
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(g, semi_quaver+quaver)
+    music.play_tone(g, semi_quaver+quaver)
+    music.play_tone(f, quaver+semi_quaver)
+    music.play_tone(e, semi_quaver)
+    music.play_tone(d, quaver)
+
+
+    #never gonna run a-round 
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(f, crotchet)
+    music.play_tone(g, quaver)
+    music.play_tone(e, quaver+semi_quaver)
+
+    music.play_tone(d, semi_quaver)
+    music.play_tone(c, crotchet)
+
+    #and de-sert uu
+    music.play_tone(c, quaver)
+    music.play_tone(g, crotchet)
+    music.play_tone(f, minum)
+
+    #never gonna make u cry
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(a, semi_quaver+quaver)
+    music.play_tone(a, semi_quaver+quaver)
+    music.play_tone(g, quaver+crotchet)
+
+
+    #never gonna say good bye
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(c2, crotchet)
+    music.play_tone(e, quaver)
+    music.play_tone(f, quaver+semi_quaver)
+
+    music.play_tone(d, semi_quaver)
+    music.play_tone(c, crotchet)
+
+    #never gonna tell a lie 
+    music.play_tone(c, semi_quaver)
+    music.play_tone(d, semi_quaver)
+    music.play_tone(f, semi_quaver)
+    music.play_tone(d, semi_quaver)
+
+    music.play_tone(f, crotchet)
+    music.play_tone(g, quaver)
+    music.play_tone(e, quaver+semi_quaver)
+
+    music.play_tone(d, semi_quaver)
+    music.play_tone(c, crotchet)
+
+    #and hurt u
+    music.play_tone(c, quaver)
+    music.play_tone(g, crotchet)
+    music.play_tone(f, minum)
+
+
+
+
+
+#play 
+
+#verse1,chorsu,verse2,chorus,chorus,bridge,verse3,chorus,chorus,chorus,chorus
+
+def on_button_pressed_a():
+    verse1()
+    chorus()
+input.on_button_pressed(Button.A, on_button_pressed_a)
