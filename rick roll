@@ -192,8 +192,8 @@ def chorus():
     music.play_tone(e, quaver)
     music.play_tone(f, quaver+semi_quaver)
 
-    music.play_tone(d, semi_quaver)
-    music.play_tone(c, crotchet)
+    music.play_tone(e, semi_quaver)
+    music.play_tone(d, crotchet)
 
     #never gonna tell a lie
     music.play_tone(c, semi_quaver)
